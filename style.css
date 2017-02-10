@@ -3,6 +3,12 @@ body {
   margin: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.1s ease;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -11,7 +17,7 @@ nav {
   font-size: 14px;
   font-family: "Times New Roman", sans-serif;
   text-transform: uppercase;
-  border-bottom: solid 2px #262626;
+  /*border-bottom: solid 2px #262626;*/
 }
 
 nav .menu-separator {
@@ -31,12 +37,12 @@ nav .riot-menu > ul {
   margin: 0;
   padding: 0;
 }
-
+/*
 nav .riot-menu > ul a {
   color: inherit;
   text-decoration: none;
   transition: color 0.1s ease;
-}
+}*/
 
 nav .riot-menu > ul li {
   list-style: none;
@@ -61,11 +67,11 @@ nav .login-menu {
   margin-right: 20px;
 }
 
-nav .login-menu > a {
+/*nav .login-menu > a {
   text-decoration: none;
   color: inherit;
   transition: color 0.1s ease;
-}
+}*/
 
 nav .login-menu > a:hover {
   color: white;
@@ -73,3 +79,50 @@ nav .login-menu > a:hover {
 
 nav .login-menu > div {
 }
+
+.lcs-menu > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #646464;
+  font-family: "Helvetica";
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-top: 2px solid #262626;
+  border-bottom: 1px solid #262626;
+}
+
+.lcs-menu > ul li {
+  list-style: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: inherit;
+  padding: 64px 32px 20px 32px;
+  border-right: 1px solid #262626;
+}
+
+.lcs-menu a:hover {
+  color: #b4b4b4;
+}
+
+.lcs-menu .selected {
+  color: white;
+  /*border-bottom: 5px solid #5abbd4;*/
+  box-shadow: inset 0 0px 0 0 #f00,
+              inset 0px 0 0 0 #f00,
+              inset 0px 0 0 0 #f00,
+              inset 0 -5px 0 0 #5abbd4;
+}
+
+.newsfeed {
+  display: flex;
+}
+
+.newsfeed .minor-news {
+  display: flex;
+  flex-flow: column;
+}
+/*
+article .news {
+  display: flex;
+}*/
