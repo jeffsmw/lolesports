@@ -1,0 +1,75 @@
+body {
+  background-color: black;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c9aa71;
+  font-size: 14px;
+  font-family: "Times New Roman", sans-serif;
+  text-transform: uppercase;
+  border-bottom: solid 2px #262626;
+}
+
+nav .menu-separator {
+  display: inline-block;
+  border-left: 2px solid #262626;
+  margin: 0 10px;
+  height: 30px;
+}
+
+nav .riot-menu a:hover {
+  color: white;
+}
+
+nav .riot-menu > ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav .riot-menu > ul a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.1s ease;
+}
+
+nav .riot-menu > ul li {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0 10px;
+}
+
+nav .riot-menu .selected {
+  color: white;
+  border-bottom: solid 2px #c9aa71;
+}
+
+nav .logo {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+nav .login-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+nav .login-menu > a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.1s ease;
+}
+
+nav .login-menu > a:hover {
+  color: white;
+}
+
+nav .login-menu > div {
+}
