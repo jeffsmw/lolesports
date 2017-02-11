@@ -130,25 +130,44 @@ article {
 
 article h1 {
   margin: 0;
-  padding: 20px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.8)); /* Standard syntax (must be last) */
+  padding: 0;
+}
+
+article .caption {
+  padding: 35px;
+  background: linear-gradient(to bottom,
+              rgba(0,0,0,0) 0%,
+              rgba(0,0,0,0) 5%,
+              rgba(0,0,0,0.5) 35%,
+              rgba(0,0,0,0.8) 100%)
+}
+
+article .caption > span {
+  display: inline-block;
+  padding: 4px 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: solid 2px white;
+  border-radius: 4px;
 }
 
 article#news-1 {
   background-image: url("./image/news1.jpg");
-  height: 36vw;
-  width: 70vw;
+  height: 38vw;
+  width: 66.66vw;
   font-size: 32px;
 }
 
 article#news-2 {
   background-image: url("./image/news2.jpg");
-  height: 18vw;
-  width: 30vw;
+  height: 19vw;
+  width: 33.33vw;
 }
 
 article#news-3 {
   background-image: url("./image/news3.jpg");
-  height: 18vw;
-  width: 30vw;
+  height: 19vw;
+  width: 33.33vw;
 }
