@@ -164,4 +164,40 @@ article#news-3 {
 
 .schedule {
   color: white;
+  height: 108px;
+  font-family: "Helvetica";
+  font-size: 13px;
+  overflow-x: scroll;
+  border-top: solid 1px #2d2d2d;
+  border-bottom: solid 1px #2d2d2d;
+}
+
+.schedule li > div:first-child {
+  font-weight: 700;
+  color: #646464;
+}
+
+.schedule > ul {
+  display: flex;
+  height: 100%;
+}
+
+.schedule > ul a {
+  display: flex; /*AskSteve*/
+  padding: 16px;
+  border-left: solid 1px #2d2d2d;
+  background: #1a1a1a;
+}
+
+.schedule li {
+  width: 137px; /*AskSteve*/
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+
+.schedule span {
+  float: right;
 }
