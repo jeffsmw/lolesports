@@ -22,6 +22,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 60px;
   color: #c9aa71;
   font-size: 14px;
   font-family: "Times New Roman", sans-serif;
@@ -53,6 +54,24 @@ nav .riot-menu > ul li {
 nav .riot-menu .selected {
   color: white;
   border-bottom: solid 2px #c9aa71;
+}
+
+nav .riot-menu-alt {
+  position: absolute;
+  left: 50vw;
+  width: 120px;
+  text-align: center;
+  margin-left: -60px;
+}
+
+nav .riot-menu-alt div:first-child {
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+nav .riot-menu-alt div:last-child {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 nav .logo {
@@ -106,7 +125,7 @@ nav .login-menu > div {
 
 .newsfeed {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
 }
 
 article {
@@ -145,21 +164,21 @@ article .caption > span {
 
 article#news-1 {
   background-image: url("./image/news1.jpg");
-  height: 38vw;
-  width: 66.66vw;
+  /*height: 38vw;
+  width: 66.66vw;*/
   font-size: 32px;
 }
 
 article#news-2 {
   background-image: url("./image/news2.jpg");
-  height: 19vw;
-  width: 33.33vw;
+  /*height: 19vw;
+  width: 33.33vw;*/
 }
 
 article#news-3 {
   background-image: url("./image/news3.jpg");
-  height: 19vw;
-  width: 33.33vw;
+  /*height: 19vw;
+  width: 33.33vw;*/
 }
 
 .schedule {
@@ -182,6 +201,7 @@ article#news-3 {
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 1;
+  color: #5abbd4;
 }
 
 .schedule .alternate div:first-child {
@@ -211,4 +231,18 @@ article#news-3 {
 
 .schedule span {
   float: right;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1023px) {
+  .riot-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) { /*AskSteve*/
+  .riot-menu-alt {
+    display: none;
+  }
 }

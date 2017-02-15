@@ -13,7 +13,12 @@
 * hamburger menu collapse
 * media queries
 * icons in menu
-* dropdow for more competitions
+* dropdown for more competitions
 
 ###### newsfeed:
 * media queries, collapsable
+
+###### schedule:
+* dropdown for first box
+* mobile view
+* resize to page width with "pages"
