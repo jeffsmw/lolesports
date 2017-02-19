@@ -1,4 +1,7 @@
 ## README
+* Hamburger menu riot-menu
+* .mobile class to hide everything
+
 
 #### Todo:
 ###### riot-menu:
@@ -13,7 +16,7 @@
 * hamburger menu collapse
 * media queries
 * icons in menu
-* dropdown for more competitions
+* dropdown for more competitionssla
 
 ###### newsfeed:
 * media queries, collapsable
