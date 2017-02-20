@@ -239,6 +239,10 @@ article#news-3 {
   .riot-menu {
     display: none;
   }
+
+  .mobile {
+    
+  }
 }
 
 @media screen and (min-width: 1024px) { /*AskSteve*/
