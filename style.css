@@ -241,7 +241,7 @@ article#news-3 {
   }
 
   .mobile {
-    
+
   }
 }
 
@@ -252,5 +252,9 @@ article#news-3 {
 
   .riot-menu-alt {
     display: none;
+  }
+
+  .desktop {
+    
   }
 }
