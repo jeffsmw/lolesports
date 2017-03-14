@@ -233,6 +233,20 @@ article#news-3 {
   float: right;
 }
 
+.newsfeed-two {
+
+}
+
+.newsfeed-two .section-one {
+
+}
+.newsfeed-two .section-two {
+
+}
+.newsfeed-two .section-three {
+
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1023px) {
@@ -255,6 +269,6 @@ article#news-3 {
   }
 
   .desktop {
-    
+
   }
 }
