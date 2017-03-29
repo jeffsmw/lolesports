@@ -95,6 +95,7 @@ nav .login-menu > div {
 
 .lcs-menu > ul {
   display: flex;
+  justify-content: space-between;
   color: #646464;
   font-family: "Helvetica";
   font-size: 0.85rem;
@@ -106,7 +107,7 @@ nav .login-menu > div {
 .lcs-menu > ul li {
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 64px 32px 20px 32px;
+  padding: 64px 0 20px 0;
   border-right: 1px solid #262626;
 }
 
@@ -125,7 +126,7 @@ nav .login-menu > div {
 
 .newsfeed {
   display: flex;
-  /*flex-wrap: wrap;*/
+  flex-flow: row wrap;
 }
 
 article {
@@ -165,20 +166,26 @@ article .caption > span {
 article#news-1 {
   background-image: url("./image/news1.jpg");
   /*height: 38vw;
-  width: 66.66vw;*/
+  min-height: 38vw;
+  width: 66.66vw;
+  min-width: 66.66vw;*/
   font-size: 32px;
 }
 
 article#news-2 {
   background-image: url("./image/news2.jpg");
-  /*height: 19vw;
-  width: 33.33vw;*/
+  height: 19vw;
+  min-height: 19vw;
+  width: 33.33vw;
+  min-width: 33.33vw;
 }
 
 article#news-3 {
   background-image: url("./image/news3.jpg");
-  /*height: 19vw;
-  width: 33.33vw;*/
+  height: 19vw;
+  min-height: 19vw;
+  width: 33.33vw;
+  min-width: 33.33vw;
 }
 
 .schedule {
@@ -250,25 +257,50 @@ article#news-3 {
 /* Media Queries */
 
 @media screen and (max-width: 1023px) {
+  nav {
+    border-bottom: 2px solid #262626;
+  }
+
   .riot-menu {
     display: none;
   }
 
-  .mobile {
+  .lcs-menu {
+    height: 90px;
+    border-bottom: 2px solid #262626;
+  }
 
+  .lcs-menu ul {
+    display: none;
+  }
+
+  .newsfeed {
+    flex-wrap: wrap;
+  }
+
+  article#news-1 {
+    min-width: 100vw;
+    height: 50vw;
+  }
+
+  article#news-2 {
+  }
+
+  .newsfeed-two {
+    flex-direction: column;
   }
 }
 
 @media screen and (min-width: 1024px) { /*AskSteve*/
+  .logo i {
+    display: none;
+  }
+
   .riot-menu .menu-description{
     display: none;
   }
 
   .riot-menu-alt {
     display: none;
-  }
-
-  .desktop {
-
   }
 }
