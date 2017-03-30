@@ -126,7 +126,11 @@ nav .login-menu > div {
 
 .newsfeed {
   display: flex;
-  flex-flow: row wrap;
+}
+
+.nested-newsfeed {
+  display: flex;
+  flex-direction: column;
 }
 
 article {
@@ -149,7 +153,7 @@ article .caption {
               rgba(0,0,0,0) 0%,
               rgba(0,0,0,0) 5%,
               rgba(0,0,0,0.5) 35%,
-              rgba(0,0,0,0.8) 100%)
+              rgba(0,0,0,0.8) 100%);
 }
 
 article .caption > span {
@@ -163,29 +167,31 @@ article .caption > span {
   border-radius: 4px;
 }
 
+article img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
 article#news-1 {
-  background-image: url("./image/news1.jpg");
-  /*height: 38vw;
-  min-height: 38vw;
+  /*background-image: url("./image/news1.jpg");*/
   width: 66.66vw;
-  min-width: 66.66vw;*/
+  height: 33.33vw;
+  float: left;
   font-size: 32px;
 }
 
 article#news-2 {
   background-image: url("./image/news2.jpg");
-  height: 19vw;
-  min-height: 19vw;
   width: 33.33vw;
-  min-width: 33.33vw;
+  height: 16.66vw;
 }
 
 article#news-3 {
   background-image: url("./image/news3.jpg");
-  height: 19vw;
-  min-height: 19vw;
   width: 33.33vw;
-  min-width: 33.33vw;
+  height: 16.66vw;
 }
 
 .schedule {
@@ -275,15 +281,24 @@ article#news-3 {
   }
 
   .newsfeed {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
-  article#news-1 {
+  .newsfeed article {
     min-width: 100vw;
-    height: 50vw;
+    min-height: 50vw;
   }
 
-  article#news-2 {
+  .nested-newsfeed {
+    flex-direction: row;
+  }
+
+  .nested-newsfeed article {
+    min-width: 50vw;
+    min-height: 25vw;
+  }
+
+  .nested-newsfeed .caption {
   }
 
   .newsfeed-two {

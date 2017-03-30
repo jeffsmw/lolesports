@@ -6,6 +6,7 @@
 #### Todo:
 ###### riot-menu:
 * logo
+* center text
 * selected underlining?
 * Play Now button
 * Hamburger menu collapse
@@ -14,9 +15,10 @@
 ###### lcs-menu:
 * logo
 * hamburger menu collapse
+* mobile menu
 * media queries
 * icons in menu
-* dropdown for more competitionssla
+* dropdown for more competitions
 
 ###### newsfeed:
 * media queries, collapsable
