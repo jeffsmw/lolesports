@@ -27,3 +27,7 @@
 * dropdown for first box
 * mobile view
 * resize to page width with "pages"
+
+##### newsfeed-two:
+* flexbox
+* media queries
