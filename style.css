@@ -135,7 +135,6 @@ nav .login-menu > div {
 
 article {
   display: flex;
-  /*flex-direction: column-reverse;*/
   background-color: black;
   background-size: cover;
   color: white;
@@ -148,7 +147,9 @@ article h1 {
   padding: 0;
 }
 
-article .caption {
+.newsfeed .caption {
+  width: 100%;
+  box-sizing: border-box;
   padding: 35px;
   background: linear-gradient(to bottom,
               rgba(0,0,0,0) 0%,
@@ -158,7 +159,7 @@ article .caption {
   z-index: 2;
   position: absolute;
   bottom: 0;
-  width: 100%;
+  left: 0;
 }
 
 article .caption > span {
@@ -179,22 +180,18 @@ article img {
   z-index: 1;
 }
 
-article#news-1 {
-  /*background-image: url("./image/news1.jpg");*/
+.newsfeed #news-1 {
   width: 66.66vw;
   height: 33.33vw;
-  float: left;
   font-size: 32px;
 }
 
-article#news-2 {
-  /*background-image: url("./image/news2.jpg");*/
+.newsfeed #news-2 {
   width: 33.33vw;
   height: 16.66vw;
 }
 
-article#news-3 {
-  /*background-image: url("./image/news3.jpg");*/
+.newsfeed #news-3 {
   width: 33.33vw;
   height: 16.66vw;
 }
@@ -251,24 +248,61 @@ article#news-3 {
   float: right;
 }
 
+
+/************************** newsfeed-two ******************************/
+
 .newsfeed-two {
-
+  display: flex;
 }
 
-.newsfeed-two .section-one {
-
+.newsfeed-two article {
+  padding: 0 20px;
+  box-sizing: border-box;
 }
-.newsfeed-two .section-two {
 
-}
-.newsfeed-two .section-three {
+.newsfeed-two .caption {
   width: 100%;
+  box-sizing: border-box;
+  padding: 35px;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.newsfeed-two-main {
+  width: 83.33vw;
+  display: flex;
+  flex-direction: column;
+}
+
+  .newsfeed-two .section-one {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+    .newsfeed-two #news-1 {
+    }
+
+    .newsfeed-two #news-2 {
+    }
+
+    .newsfeed-two #news-3 {
+    }
+
+  .newsfeed-two .section-two {
+
+  }
+
+.newsfeed-two .section-three {
+  width: 16.66vw;
   color: white;
 }
 
 .newsfeed-two .section-three div {
   background-color: darkorange;
 }
+
 /* Media Queries */
 
 @media screen and (max-width: 1023px) {
