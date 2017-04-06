@@ -135,11 +135,12 @@ nav .login-menu > div {
 
 article {
   display: flex;
-  flex-direction: column-reverse;
+  /*flex-direction: column-reverse;*/
   background-color: black;
   background-size: cover;
   color: white;
-  font-family: "Helvetica";Z
+  font-family: "Helvetica";
+  position: relative;
 }
 
 article h1 {
@@ -154,6 +155,10 @@ article .caption {
               rgba(0,0,0,0) 5%,
               rgba(0,0,0,0.5) 35%,
               rgba(0,0,0,0.8) 100%);
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 article .caption > span {
@@ -183,13 +188,13 @@ article#news-1 {
 }
 
 article#news-2 {
-  background-image: url("./image/news2.jpg");
+  /*background-image: url("./image/news2.jpg");*/
   width: 33.33vw;
   height: 16.66vw;
 }
 
 article#news-3 {
-  background-image: url("./image/news3.jpg");
+  /*background-image: url("./image/news3.jpg");*/
   width: 33.33vw;
   height: 16.66vw;
 }
